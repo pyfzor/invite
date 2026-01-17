@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+.invite {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background: url("invite.jpg") center / contain no-repeat;
+}
+
+/* 🔥 КНОПКА ТОЧНО ПОД PDF */
+.invite-button {
+    position: absolute;
+
+    left: 50%;
+    top: 88vh;              /* ← точное место кнопки */
+    transform: translateX(-50%);
+
+    width: 12vw;            /* ← ширина кнопки как в PDF */
+    max-width: 150px;
+    height: 7vh;
+    max-height: 80px;
+
+    border-radius: 999px;
+    cursor: pointer;
+    background: rgba(0,0,0,0);
+    transition: background 0.2s ease;
+}
+
+/* наведение */
+.invite-button:hover {
+    background: rgba(0, 0, 0, 0.12);
+}
+
+/* нажатие */
+.invite-button:active {
+    background: rgba(0, 0, 0, 0.25);
+}
